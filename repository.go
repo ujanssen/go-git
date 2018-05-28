@@ -872,7 +872,7 @@ func (r *Repository) Branches() (storer.ReferenceIter, error) {
 		}, refIter), nil
 }
 
-// Notes returns all the References that are Branches.
+// Notes returns all the References that are Notes.
 func (r *Repository) Notes() (storer.ReferenceIter, error) {
 	refIter, err := r.Storer.IterReferences()
 	if err != nil {
